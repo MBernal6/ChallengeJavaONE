@@ -1,0 +1,12 @@
+package Principal;
+
+import javax.swing.*;
+
+public class MenúPrincipal {
+
+	public static void main(String[] args) {
+		
+		JOptionPane.showInputDialog("Seleccione una opción de conversor","Menú");
+	}
+	
+}
