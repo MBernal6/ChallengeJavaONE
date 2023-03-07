@@ -17,15 +17,22 @@ public class MenúPrincipal {
 		
 			switch(opciones) {
 			case "Conversor de Monedas":
-				String input = JOptionPane.showInputDialog(null, "Ingrese valor a convertir");
-				double valor = Double.parseDouble(input);
-				conversion.TipoCambio(valor);
-				
+				try {
+					String input = JOptionPane.showInputDialog(null, "Ingrese valor a convertir");
+					double valor = Double.parseDouble(input);
+					conversion.TipoCambio(valor);
+					}catch (Exception e) {
+						System.out.println("valor no valido");
+						JOptionPane.showMessageDialog(null, "Valor no valido");
+					}
+
 				int respuesta = JOptionPane.showConfirmDialog(null, "¿Desea realizar otra Conversión?");
 				if(JOptionPane.OK_OPTION == respuesta) {
 					System.out.println("Entra");
+					continue;
 				} else {
 					JOptionPane.showMessageDialog(null, "Programa finalizado");
+					System.out.println("Programa finalizado");
 				}
 			}
 		break;	
