@@ -7,6 +7,7 @@ public class Monedas {
 	TipoCambio monedas = new TipoCambio();
 	
 	public void TipoCambio(double valor) {
+		
 		String opciones = (JOptionPane.showInputDialog(null, "Ingresa la cantidad de dinero que deseas convertir", 
 				"Monedas", JOptionPane.PLAIN_MESSAGE,null, new Object[] 
 						{"De Soles a Dolares", "De Soles a Euros", "De Soles a Libras", "De Soles a Yen Japones", "De soles a Won SurCoreano",
