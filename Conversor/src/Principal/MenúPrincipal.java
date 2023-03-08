@@ -21,7 +21,7 @@ public class MenúPrincipal {
 			switch(opciones) {
 			case "Conversor de Monedas":
 				try {
-					String input = JOptionPane.showInputDialog(null, "Ingrese monto a convertir");
+					String input = JOptionPane.showInputDialog(null, "Ingrese el monto de dinero a convertir");
 					double valor = Double.parseDouble(input);
 					conversion.TipoCambio(valor);
 					}catch (Exception e) {
